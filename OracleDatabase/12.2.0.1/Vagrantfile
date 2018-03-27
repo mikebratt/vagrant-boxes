@@ -38,6 +38,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 1521, host: 1521
   config.vm.network "forwarded_port", guest: 5500, host: 5500
 
+  # Obtain IP address on local network via DCHP
+  config.vm.network "public_network", bridge: "bridge0"
+  
   # Provision everything on the first run
   config.vm.provision "shell", path: "scripts/install.sh", env:
     {
