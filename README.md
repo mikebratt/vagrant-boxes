@@ -6,7 +6,7 @@ A vagrant box that provisions Oracle software automatically, using Vagrant, an O
 2. Install [Vagrant](https://vagrantup.com/)
 
 ## Getting started
-1. Clone this repository `git clone https://github.com/oracle/vagrant-boxes`
+1. Clone this repository `git clone https://github.com/mikebratt/vagrant-boxes`
 2. Change into the desired software folder
 3. Follow the README.md instructions inside the folder
 
